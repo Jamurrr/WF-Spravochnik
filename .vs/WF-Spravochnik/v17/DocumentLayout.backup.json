@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "D:\\c#\\WF-Spravochnik\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9A0E58E4-62AB-489C-97EE-1D1A40264BEA}|WinFormsApp1\\WinFormsApp1.csproj|D:\\c#\\WF-Spravochnik\\winformsapp1\\skills.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9A0E58E4-62AB-489C-97EE-1D1A40264BEA}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\skills.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9A0E58E4-62AB-489C-97EE-1D1A40264BEA}|WinFormsApp1\\WinFormsApp1.csproj|d:\\c#\\wf-spravochnik\\winformsapp1\\projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A0E58E4-62AB-489C-97EE-1D1A40264BEA}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A0E58E4-62AB-489C-97EE-1D1A40264BEA}|WinFormsApp1\\WinFormsApp1.csproj|d:\\c#\\wf-spravochnik\\winformsapp1\\projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9A0E58E4-62AB-489C-97EE-1D1A40264BEA}|WinFormsApp1\\WinFormsApp1.csproj|D:\\c#\\WF-Spravochnik\\winformsapp1\\projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9A0E58E4-62AB-489C-97EE-1D1A40264BEA}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -19,15 +23,11 @@
       "RelativeMoniker": "D:0:0:{9A0E58E4-62AB-489C-97EE-1D1A40264BEA}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\skills.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A0E58E4-62AB-489C-97EE-1D1A40264BEA}|WinFormsApp1\\WinFormsApp1.csproj|d:\\c#\\wf-spravochnik\\winformsapp1\\skills.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9A0E58E4-62AB-489C-97EE-1D1A40264BEA}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\skills.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A0E58E4-62AB-489C-97EE-1D1A40264BEA}|WinFormsApp1\\WinFormsApp1.csproj|d:\\c#\\wf-spravochnik\\winformsapp1\\jobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9A0E58E4-62AB-489C-97EE-1D1A40264BEA}|WinFormsApp1\\WinFormsApp1.csproj|D:\\c#\\WF-Spravochnik\\winformsapp1\\jobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9A0E58E4-62AB-489C-97EE-1D1A40264BEA}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\jobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A0E58E4-62AB-489C-97EE-1D1A40264BEA}|WinFormsApp1\\WinFormsApp1.csproj|d:\\c#\\wf-spravochnik\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9A0E58E4-62AB-489C-97EE-1D1A40264BEA}|WinFormsApp1\\WinFormsApp1.csproj|D:\\c#\\WF-Spravochnik\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9A0E58E4-62AB-489C-97EE-1D1A40264BEA}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -42,36 +42,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Projects.cs [Design]",
               "DocumentMoniker": "D:\\c#\\WF-Spravochnik\\WinFormsApp1\\Projects.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Projects.cs",
-              "ToolTip": "D:\\c#\\WF-Spravochnik\\WinFormsApp1\\Projects.cs [Design]*",
-              "RelativeToolTip": "WinFormsApp1\\Projects.cs [Design]*",
+              "ToolTip": "D:\\c#\\WF-Spravochnik\\WinFormsApp1\\Projects.cs [Design]",
+              "RelativeToolTip": "WinFormsApp1\\Projects.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T11:46:29.835Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Projects.cs",
               "DocumentMoniker": "D:\\c#\\WF-Spravochnik\\WinFormsApp1\\Projects.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Projects.cs",
-              "ToolTip": "D:\\c#\\WF-Spravochnik\\WinFormsApp1\\Projects.cs*",
-              "RelativeToolTip": "WinFormsApp1\\Projects.cs*",
-              "ViewState": "AgIAABYAAAAAAAAAAAAiwDMAAAAfAAAAAAAAAA==",
+              "ToolTip": "D:\\c#\\WF-Spravochnik\\WinFormsApp1\\Projects.cs",
+              "RelativeToolTip": "WinFormsApp1\\Projects.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAiwDMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T11:50:28.093Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Skills.cs [Design]",
               "DocumentMoniker": "D:\\c#\\WF-Spravochnik\\WinFormsApp1\\Skills.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Skills.cs",
@@ -83,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Skills.cs",
               "DocumentMoniker": "D:\\c#\\WF-Spravochnik\\WinFormsApp1\\Skills.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Skills.cs",
@@ -91,8 +91,7 @@
               "RelativeToolTip": "WinFormsApp1\\Skills.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T11:40:39.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T11:40:39.758Z"
             },
             {
               "$type": "Document",
@@ -103,12 +102,11 @@
               "ToolTip": "D:\\c#\\WF-Spravochnik\\WinFormsApp1\\Jobs.cs [Design]",
               "RelativeToolTip": "WinFormsApp1\\Jobs.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T11:18:40.443Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-16T11:18:40.443Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Jobs.cs",
               "DocumentMoniker": "D:\\c#\\WF-Spravochnik\\WinFormsApp1\\Jobs.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Jobs.cs",
@@ -116,8 +114,7 @@
               "RelativeToolTip": "WinFormsApp1\\Jobs.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAwBMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T11:18:27.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T11:18:27.453Z"
             },
             {
               "$type": "Document",
@@ -128,8 +125,7 @@
               "ToolTip": "D:\\c#\\WF-Spravochnik\\WinFormsApp1\\Form1.cs [Design]",
               "RelativeToolTip": "WinFormsApp1\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T10:04:15.661Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-16T10:04:15.661Z"
             },
             {
               "$type": "Document",
@@ -141,8 +137,7 @@
               "RelativeToolTip": "WinFormsApp1\\Form1.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAowCsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-18T16:13:49.597Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-18T16:13:49.597Z"
             }
           ]
         }

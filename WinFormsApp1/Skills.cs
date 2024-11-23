@@ -13,6 +13,7 @@ namespace WinFormsApp1
     public partial class Skills : Form
     {
         string currentButton = "";
+
         public Skills()
         {
             InitializeComponent();
@@ -33,6 +34,10 @@ namespace WinFormsApp1
             dataGridView1.Rows.Add("Аналитик", "50000.00");
             dataGridView1.Rows.Add("FrontEnd developer", "65000.00");
             dataGridView1.Rows.Add("BackEnd developer", "70000.00");
+            string connectionString = "Data Source=SERVER_NAME;Initial Catalog=DATABASE_NAME;Integrated Security=True;";
+            // Или если требуется авторизация:
+            // string connectionString = "Data Source=SERVER_NAME;Initial Catalog=DATABASE_NAME;User ID=USERNAME;Password=PASSWORD;";
+
         }
 
         private void AddButton_Click(object sender, EventArgs e)
