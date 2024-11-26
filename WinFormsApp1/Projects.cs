@@ -16,10 +16,14 @@ namespace WinFormsApp1
 {
     public partial class Projects : Form
     {
+        string currentButton = "";
         public Projects()
         {
             InitializeComponent();
             groupBox1.Visible = false;
+            groupBox2.Visible = false;
+
+            //Проекты
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
@@ -95,8 +99,153 @@ namespace WinFormsApp1
             dataGridView2.Columns.Add(teamColumn1);
             dataGridView2.Columns.Add(teamColumn2);
             dataGridView2.Columns.Add(teamColumn3);
+
+
+            //Изменение команды проекта
+            dataGridView3.RowHeadersVisible = false;
+            dataGridView3.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
+            DataGridViewTextBoxColumn editTeamColumn1 = new DataGridViewTextBoxColumn();
+            editTeamColumn1.Name = "Отвественный";
+            editTeamColumn1.HeaderText = "Ответственный";
+            editTeamColumn1.DataPropertyName = "руководитель";
+
+            DataGridViewTextBoxColumn editTeamColumn2 = new DataGridViewTextBoxColumn();
+            editTeamColumn2.Name = "lastName";
+            editTeamColumn2.HeaderText = "Фамилия";
+            editTeamColumn2.DataPropertyName = "lastName";
+
+            DataGridViewTextBoxColumn editTeamColumn3 = new DataGridViewTextBoxColumn();
+            editTeamColumn3.Name = "firstName";
+            editTeamColumn3.HeaderText = "Имя";
+            editTeamColumn3.DataPropertyName = "firstName";
+
+            DataGridViewTextBoxColumn editTeamColumn4 = new DataGridViewTextBoxColumn();
+            editTeamColumn4.Name = "otche";
+            editTeamColumn4.HeaderText = "Отчество";
+            editTeamColumn4.DataPropertyName = "otche";
+
+            dataGridView3.Columns.Add(editTeamColumn1);
+            dataGridView3.Columns.Add(editTeamColumn2);
+            dataGridView3.Columns.Add(editTeamColumn3);
+            dataGridView3.Columns.Add(editTeamColumn4);
+
+
         }
 
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            label4.Text = "Добавление проекта";
+            currentButton = "Add";
 
+            showEditing();
+            disableButtons();
+            clearFields();
+        }
+
+        private void EditButton_Click(object sender, EventArgs e)
+        {
+            currentButton = "Edit";
+            label4.Text = "Редактирование проекта";
+
+            showEditing();
+            disableButtons();
+
+            DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
+
+            name.Text = selectedRow.Cells[0].Value.ToString();
+        }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            int rowIndex = dataGridView1.SelectedRows[0].Index;
+            dataGridView1.Rows.RemoveAt(rowIndex);
+        }
+
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            hideEditing();
+            enableButtons();
+
+            if (currentButton == "Add")
+            {
+                string Name = name.Text;
+
+                dataGridView1.Rows.Add(Name);
+            }
+
+            if (currentButton == "Edit")
+            {
+                DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
+
+                selectedRow.Cells[0].Value = name.Text;
+            }
+        }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            hideEditing();
+            enableButtons();
+        }
+
+        private void clearFields()
+        {
+            name.Text = "";
+            description.Text = "";
+            dateCreate.Value = DateTime.Now;
+            dateStartPlan.Value = DateTime.Now;
+            dateEndPlan.Value = DateTime.Now;
+            dateStartFact.Value = DateTime.Now;
+            dateEndFact.Value = DateTime.Now;
+        }
+
+        private void disableButtons()
+        {
+            AddButton.Enabled = false;
+            EditButton.Enabled = false;
+            DeleteButton.Enabled = false;
+        }
+
+        private void enableButtons()
+        {
+            AddButton.Enabled = true;
+            EditButton.Enabled = true;
+            DeleteButton.Enabled = true;
+        }
+
+        private void showEditing()
+        {
+            dataGridView1.Visible = false;
+            groupBox1.Visible = true;
+            dataGridView2.Visible = false;
+            groupBox2.Visible = true;
+
+            if (currentButton == "Add")
+            {
+                dateCreate.Visible = false;
+                dateStartFact.Visible = false;
+                dateEndFact.Visible = false;
+                label8.Visible = false;
+                label11.Visible = false;
+                label12.Visible = false;
+            }
+            else
+            {
+                dateCreate.Visible = true;
+                dateStartFact.Visible = true;
+                dateEndFact.Visible = true;
+                label8.Visible = true;
+                label11.Visible = true;
+                label12.Visible = true;
+            }
+        }
+
+        private void hideEditing()
+        {
+            dataGridView1.Visible = true;
+            groupBox1.Visible = false;
+            dataGridView2.Visible = true;
+            groupBox2.Visible = false;
+        }
     }
 }
