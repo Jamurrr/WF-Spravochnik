@@ -50,8 +50,8 @@
               "Title": "Projects.cs [Design]",
               "DocumentMoniker": "D:\\c#\\WF-Spravochnik\\WinFormsApp1\\Projects.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Projects.cs",
-              "ToolTip": "D:\\c#\\WF-Spravochnik\\WinFormsApp1\\Projects.cs [Design]*",
-              "RelativeToolTip": "WinFormsApp1\\Projects.cs [Design]*",
+              "ToolTip": "D:\\c#\\WF-Spravochnik\\WinFormsApp1\\Projects.cs [Design]",
+              "RelativeToolTip": "WinFormsApp1\\Projects.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T10:03:07.266Z",
               "EditorCaption": " [Design]"
@@ -62,9 +62,9 @@
               "Title": "Projects.cs",
               "DocumentMoniker": "D:\\c#\\WF-Spravochnik\\WinFormsApp1\\Projects.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Projects.cs",
-              "ToolTip": "D:\\c#\\WF-Spravochnik\\WinFormsApp1\\Projects.cs*",
-              "RelativeToolTip": "WinFormsApp1\\Projects.cs*",
-              "ViewState": "AgIAAMgAAAAAAAAAAAAgwO0AAAAnAAAAAAAAAA==",
+              "ToolTip": "D:\\c#\\WF-Spravochnik\\WinFormsApp1\\Projects.cs",
+              "RelativeToolTip": "WinFormsApp1\\Projects.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAkwOUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T11:50:28.093Z",
               "EditorCaption": ""
@@ -128,7 +128,8 @@
               "ToolTip": "D:\\c#\\WF-Spravochnik\\WinFormsApp1\\Form1.cs [Design]",
               "RelativeToolTip": "WinFormsApp1\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T10:04:15.661Z"
+              "WhenOpened": "2024-11-16T10:04:15.661Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
