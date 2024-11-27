@@ -324,6 +324,7 @@
             // 
             dataGridView2.AllowUserToAddRows = false;
             dataGridView2.AllowUserToDeleteRows = false;
+            dataGridView2.BackgroundColor = SystemColors.Control;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.Location = new Point(20, 426);
             dataGridView2.Name = "dataGridView2";
@@ -356,7 +357,7 @@
             // button1
             // 
             button1.FlatStyle = FlatStyle.System;
-            button1.Font = new Font("Tahoma", 13F, FontStyle.Bold);
+            button1.Font = new Font("Tahoma", 12F, FontStyle.Bold);
             button1.Location = new Point(631, 46);
             button1.Name = "button1";
             button1.Size = new Size(35, 35);
@@ -368,11 +369,12 @@
             // 
             dataGridView3.AllowUserToAddRows = false;
             dataGridView3.AllowUserToDeleteRows = false;
+            dataGridView3.BackgroundColor = SystemColors.Control;
             dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView3.Location = new Point(0, 7);
             dataGridView3.Name = "dataGridView3";
             dataGridView3.ReadOnly = true;
-            dataGridView3.Size = new Size(602, 179);
+            dataGridView3.Size = new Size(606, 179);
             dataGridView3.TabIndex = 0;
             // 
             // Projects
