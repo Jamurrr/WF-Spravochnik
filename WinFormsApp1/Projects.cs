@@ -222,7 +222,6 @@ namespace WinFormsApp1
 
             if (currentButton == "Add")
             {
-                dateCreate.Visible = false;
                 dateStartFact.Visible = false;
                 dateEndFact.Visible = false;
                 label8.Visible = false;

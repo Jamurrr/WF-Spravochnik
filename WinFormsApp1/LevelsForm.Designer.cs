@@ -33,6 +33,7 @@
             EditButton = new Button();
             DeleteButton = new Button();
             groupBox1 = new GroupBox();
+            label4 = new Label();
             coef = new NumericUpDown();
             CancelButton = new Button();
             SaveButton = new Button();
@@ -40,7 +41,6 @@
             label1 = new Label();
             name = new TextBox();
             label3 = new Label();
-            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)coef).BeginInit();
@@ -60,9 +60,9 @@
             // 
             // AddButton
             // 
-            AddButton.Location = new Point(308, 54);
+            AddButton.Location = new Point(299, 55);
             AddButton.Name = "AddButton";
-            AddButton.Size = new Size(98, 42);
+            AddButton.Size = new Size(98, 23);
             AddButton.TabIndex = 1;
             AddButton.Text = "Добавить";
             AddButton.UseVisualStyleBackColor = true;
@@ -70,9 +70,9 @@
             // 
             // EditButton
             // 
-            EditButton.Location = new Point(308, 124);
+            EditButton.Location = new Point(299, 102);
             EditButton.Name = "EditButton";
-            EditButton.Size = new Size(98, 42);
+            EditButton.Size = new Size(98, 23);
             EditButton.TabIndex = 2;
             EditButton.Text = "Редактировать";
             EditButton.UseVisualStyleBackColor = true;
@@ -80,9 +80,9 @@
             // 
             // DeleteButton
             // 
-            DeleteButton.Location = new Point(308, 254);
+            DeleteButton.Location = new Point(299, 200);
             DeleteButton.Name = "DeleteButton";
-            DeleteButton.Size = new Size(98, 42);
+            DeleteButton.Size = new Size(98, 23);
             DeleteButton.TabIndex = 3;
             DeleteButton.Text = "Удалить";
             DeleteButton.UseVisualStyleBackColor = true;
@@ -103,11 +103,20 @@
             groupBox1.TabIndex = 4;
             groupBox1.TabStop = false;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(4, 11);
+            label4.Name = "label4";
+            label4.Size = new Size(38, 15);
+            label4.TabIndex = 12;
+            label4.Text = "label4";
+            // 
             // coef
             // 
             coef.DecimalPlaces = 2;
             coef.Increment = new decimal(new int[] { 10, 0, 0, 131072 });
-            coef.Location = new Point(50, 188);
+            coef.Location = new Point(18, 115);
             coef.Name = "coef";
             coef.Size = new Size(64, 23);
             coef.TabIndex = 11;
@@ -115,7 +124,7 @@
             // 
             // CancelButton
             // 
-            CancelButton.Location = new Point(139, 270);
+            CancelButton.Location = new Point(166, 196);
             CancelButton.Name = "CancelButton";
             CancelButton.Size = new Size(75, 23);
             CancelButton.TabIndex = 10;
@@ -125,7 +134,7 @@
             // 
             // SaveButton
             // 
-            SaveButton.Location = new Point(39, 270);
+            SaveButton.Location = new Point(84, 196);
             SaveButton.Name = "SaveButton";
             SaveButton.Size = new Size(75, 23);
             SaveButton.TabIndex = 9;
@@ -136,7 +145,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(48, 170);
+            label2.Location = new Point(16, 97);
             label2.Name = "label2";
             label2.Size = new Size(84, 15);
             label2.TabIndex = 8;
@@ -145,7 +154,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(48, 87);
+            label1.Location = new Point(16, 40);
             label1.Name = "label1";
             label1.Size = new Size(90, 15);
             label1.TabIndex = 7;
@@ -153,9 +162,9 @@
             // 
             // name
             // 
-            name.Location = new Point(50, 105);
+            name.Location = new Point(16, 58);
             name.Name = "name";
-            name.Size = new Size(150, 23);
+            name.Size = new Size(215, 23);
             name.TabIndex = 5;
             // 
             // label3
@@ -167,20 +176,11 @@
             label3.TabIndex = 5;
             label3.Text = "Уровни специалистов";
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(4, 11);
-            label4.Name = "label4";
-            label4.Size = new Size(38, 15);
-            label4.TabIndex = 12;
-            label4.Text = "label4";
-            // 
             // LevelsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(434, 461);
+            ClientSize = new Size(423, 461);
             Controls.Add(label3);
             Controls.Add(groupBox1);
             Controls.Add(DeleteButton);

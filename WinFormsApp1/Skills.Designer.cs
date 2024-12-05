@@ -76,7 +76,7 @@
             // 
             // CancelButton
             // 
-            CancelButton.Location = new Point(147, 165);
+            CancelButton.Location = new Point(166, 140);
             CancelButton.Name = "CancelButton";
             CancelButton.Size = new Size(75, 23);
             CancelButton.TabIndex = 10;
@@ -86,7 +86,7 @@
             // 
             // SaveButton
             // 
-            SaveButton.Location = new Point(32, 165);
+            SaveButton.Location = new Point(85, 140);
             SaveButton.Name = "SaveButton";
             SaveButton.Size = new Size(75, 23);
             SaveButton.TabIndex = 9;
@@ -97,7 +97,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(48, 87);
+            label1.Location = new Point(16, 40);
             label1.Name = "label1";
             label1.Size = new Size(59, 15);
             label1.TabIndex = 7;
@@ -105,16 +105,16 @@
             // 
             // name
             // 
-            name.Location = new Point(50, 105);
+            name.Location = new Point(16, 58);
             name.Name = "name";
-            name.Size = new Size(150, 23);
+            name.Size = new Size(211, 23);
             name.TabIndex = 5;
             // 
             // DeleteButton
             // 
-            DeleteButton.Location = new Point(302, 247);
+            DeleteButton.Location = new Point(299, 200);
             DeleteButton.Name = "DeleteButton";
-            DeleteButton.Size = new Size(98, 42);
+            DeleteButton.Size = new Size(98, 23);
             DeleteButton.TabIndex = 15;
             DeleteButton.Text = "Удалить";
             DeleteButton.UseVisualStyleBackColor = true;
@@ -122,9 +122,9 @@
             // 
             // EditButton
             // 
-            EditButton.Location = new Point(302, 117);
+            EditButton.Location = new Point(299, 102);
             EditButton.Name = "EditButton";
-            EditButton.Size = new Size(98, 42);
+            EditButton.Size = new Size(98, 23);
             EditButton.TabIndex = 14;
             EditButton.Text = "Редактировать";
             EditButton.UseVisualStyleBackColor = true;
@@ -132,9 +132,9 @@
             // 
             // AddButton
             // 
-            AddButton.Location = new Point(302, 47);
+            AddButton.Location = new Point(299, 47);
             AddButton.Name = "AddButton";
-            AddButton.Size = new Size(98, 42);
+            AddButton.Size = new Size(98, 23);
             AddButton.TabIndex = 13;
             AddButton.Text = "Добавить";
             AddButton.UseVisualStyleBackColor = true;

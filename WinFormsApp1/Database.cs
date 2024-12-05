@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +32,59 @@ namespace WinFormsApp1
         {
             return connection;
         }
+
+        public DataTable executeQuery(string query)
+        {
+            DataTable dataTable = new DataTable();
+            try
+            {
+                openConnection();
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                adapter.Fill(dataTable);
+            }
+            catch (Exception ex)
+            {
+                // Обработка ошибок
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                closeConnection();
+            }
+
+            return dataTable;
+        }
+
+        public bool editData(string query, Dictionary<string, object> parameters)
+        {
+            try
+            {
+                openConnection();
+                SqlCommand command = new SqlCommand(query, connection);
+
+                foreach (var param in parameters)
+                {
+                    command.Parameters.AddWithValue(param.Key, param.Value);
+                }
+
+                int rowsAffected = command.ExecuteNonQuery();
+                return rowsAffected > 0;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка при вставке данных: {ex.Message}");
+                return false;
+            }
+            finally
+            {
+                closeConnection();
+            }
+        }
+
+        
+
+
 
     }
 }

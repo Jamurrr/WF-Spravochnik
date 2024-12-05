@@ -14,51 +14,27 @@ namespace WinFormsApp1
     public partial class Jobs : Form
     {
         string currentButton = "";
+        Database db = new Database();
         public Jobs()
         {
             InitializeComponent();
             groupBox1.Visible = false;
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            updateDataGridView();
+            dataGridView1.Columns[0].Visible = false;
 
 
-            // Создание новой колонки
-            DataGridViewTextBoxColumn column1 = new DataGridViewTextBoxColumn();
-            column1.Name = "Name";
-            column1.HeaderText = "Название";
-            column1.DataPropertyName = "name";
-            dataGridView1.Columns.Add(column1);
-
-            // Создание другой колонки
-            DataGridViewTextBoxColumn column2 = new DataGridViewTextBoxColumn();
-            column2.Name = "Zp";
-            column2.HeaderText = "Базовая зарплата";
-            column2.DataPropertyName = "zp";
-            dataGridView1.Columns.Add(column2);
-
-            column1.Width = 125;
-            column2.Width = 125;
-
-
-            dataGridView1.Rows.Add("Аналитик", "50000.00");
-            dataGridView1.Rows.Add("FrontEnd developer", "65000.00");
-            dataGridView1.Rows.Add("BackEnd developer", "70000.00");
         }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            dataGridView1.Visible = false;
-            groupBox1.Visible = true;
-
-            AddButton.Enabled = false;
-            EditButton.Enabled = false;
-            DeleteButton.Enabled = false;
+            showEditing();
+            disableButtons();
+            clearFields();
             currentButton = "Add";
-
             label4.Text = "Добавление уровня";
 
-            name.Text = "";
-            zp.Value = decimal.Parse("20000");
         }
 
         private void EditButton_Click(object sender, EventArgs e)
@@ -66,55 +42,134 @@ namespace WinFormsApp1
             currentButton = "Edit";
             label4.Text = "Редактирование уровня";
 
-            dataGridView1.Visible = false;
-            groupBox1.Visible = true;
+            showEditing();
+            disableButtons();
 
             DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
 
-            name.Text = selectedRow.Cells[0].Value.ToString();
-            zp.Value = decimal.Parse(selectedRow.Cells[1].Value.ToString());
+            name.Text = selectedRow.Cells[1].Value.ToString();
+            zp.Value = decimal.Parse(selectedRow.Cells[2].Value.ToString());
         }
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            int rowIndex = dataGridView1.SelectedRows[0].Index;
-            dataGridView1.Rows.RemoveAt(rowIndex);
+            DeleteData();
         }
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            dataGridView1.Visible = true;
-            groupBox1.Visible = false;
-
-            AddButton.Enabled = true;
-            EditButton.Enabled = true;
-            DeleteButton.Enabled = true;
+            hideEditing();
+            enableButtons();
 
             if (currentButton == "Add")
             {
-                string Name = name.Text;
-                decimal Zp = zp.Value;
-
-                dataGridView1.Rows.Add(Name, Zp);
+                AddData();
             }
 
             if (currentButton == "Edit")
             {
-                DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
-
-                selectedRow.Cells[0].Value = name.Text;
-                selectedRow.Cells[1].Value = zp.Value;
+                EditData();
             }
         }
 
         private void CancelButton_Click(object sender, EventArgs e)
         {
-            dataGridView1.Visible = true;
-            groupBox1.Visible = false;
+            hideEditing();
+            enableButtons();
+        }
 
+        private void clearFields()
+        {
+            name.Text = "";
+            zp.Text = "";
+        }
+
+        private void disableButtons()
+        {
+            AddButton.Enabled = false;
+            EditButton.Enabled = false;
+            DeleteButton.Enabled = false;
+        }
+
+        private void enableButtons()
+        {
             AddButton.Enabled = true;
             EditButton.Enabled = true;
             DeleteButton.Enabled = true;
+        }
+
+        private void showEditing()
+        {
+            dataGridView1.Visible = false;
+            groupBox1.Visible = true;
+        }
+
+        private void hideEditing()
+        {
+            dataGridView1.Visible = true;
+            groupBox1.Visible = false;
+        }
+
+        private void updateDataGridView()
+        {
+            string query = "SELECT * FROM Job";
+            DataTable dt = db.executeQuery(query);
+            dataGridView1.DataSource = dt;
+        }
+
+        private void AddData()
+        {
+            string Name = name.Text;
+            decimal Zp = zp.Value;
+            string query = "INSERT INTO Job (Название, Зарплата) VALUES (@Name, @Zp)";
+
+            Dictionary<string, object> parameters = new Dictionary<string, object>
+                {
+                    {"@Name", Name },
+                    {"@Zp", Zp }
+                };
+
+            db.editData(query, parameters);
+            updateDataGridView();
+        }
+
+        private void EditData()
+        {
+            DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
+            selectedRow.Cells[1].Value = name.Text.ToString();
+            selectedRow.Cells[2].Value = zp.Value;
+
+            string Name = name.Text;
+            decimal Zp = zp.Value;
+            int ID = int.Parse(selectedRow.Cells[0].Value.ToString());
+
+            string query = "UPDATE Job SET Название = @Name, Зарплата = @Zp WHERE ID_Должность = @ID";
+
+            var parameters = new Dictionary<string, object>
+                {
+                    { "@Name",  Name},
+                    { "@Zp", Zp},
+                    { "@ID", ID}
+                };
+
+            db.editData(query, parameters);
+            updateDataGridView();
+        }
+
+        private void DeleteData()
+        {
+            DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
+
+            int ID = int.Parse(selectedRow.Cells[0].Value.ToString());
+
+            string query = "DELETE FROM Job WHERE ID_Должность = @ID";
+            var parameters = new Dictionary<string, object>
+            {
+                { "@ID", ID }
+            };
+
+            db.editData(query, parameters);
+            updateDataGridView();
         }
     }
 }

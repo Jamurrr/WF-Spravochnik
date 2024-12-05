@@ -94,14 +94,14 @@
             groupBox1.Controls.Add(name);
             groupBox1.Location = new Point(20, 27);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(694, 323);
+            groupBox1.Size = new Size(694, 348);
             groupBox1.TabIndex = 22;
             groupBox1.TabStop = false;
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(413, 242);
+            label12.Location = new Point(264, 293);
             label12.Name = "label12";
             label12.Size = new Size(173, 15);
             label12.TabIndex = 24;
@@ -111,7 +111,7 @@
             // 
             dateEndFact.CustomFormat = "d MMMM yyyy";
             dateEndFact.Format = DateTimePickerFormat.Custom;
-            dateEndFact.Location = new Point(413, 260);
+            dateEndFact.Location = new Point(264, 311);
             dateEndFact.Name = "dateEndFact";
             dateEndFact.Size = new Size(155, 23);
             dateEndFact.TabIndex = 23;
@@ -119,7 +119,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(413, 184);
+            label11.Location = new Point(264, 235);
             label11.Name = "label11";
             label11.Size = new Size(145, 15);
             label11.TabIndex = 22;
@@ -129,7 +129,7 @@
             // 
             dateStartFact.CustomFormat = "d MMMM yyyy";
             dateStartFact.Format = DateTimePickerFormat.Custom;
-            dateStartFact.Location = new Point(413, 202);
+            dateStartFact.Location = new Point(264, 253);
             dateStartFact.Name = "dateStartFact";
             dateStartFact.Size = new Size(155, 23);
             dateStartFact.TabIndex = 21;
@@ -137,7 +137,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(413, 108);
+            label10.Location = new Point(26, 293);
             label10.Name = "label10";
             label10.Size = new Size(202, 15);
             label10.TabIndex = 20;
@@ -147,7 +147,7 @@
             // 
             dateEndPlan.CustomFormat = "d MMMM yyyy";
             dateEndPlan.Format = DateTimePickerFormat.Custom;
-            dateEndPlan.Location = new Point(413, 126);
+            dateEndPlan.Location = new Point(26, 311);
             dateEndPlan.Name = "dateEndPlan";
             dateEndPlan.Size = new Size(155, 23);
             dateEndPlan.TabIndex = 19;
@@ -155,7 +155,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(413, 51);
+            label9.Location = new Point(26, 235);
             label9.Name = "label9";
             label9.Size = new Size(174, 15);
             label9.TabIndex = 18;
@@ -165,7 +165,7 @@
             // 
             dateStartPlan.CustomFormat = "d MMMM yyyy";
             dateStartPlan.Format = DateTimePickerFormat.Custom;
-            dateStartPlan.Location = new Point(413, 69);
+            dateStartPlan.Location = new Point(26, 253);
             dateStartPlan.Name = "dateStartPlan";
             dateStartPlan.Size = new Size(155, 23);
             dateStartPlan.TabIndex = 17;
@@ -173,7 +173,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(26, 242);
+            label8.Location = new Point(381, 51);
             label8.Name = "label8";
             label8.Size = new Size(85, 15);
             label8.TabIndex = 16;
@@ -183,7 +183,7 @@
             // 
             dateCreate.CustomFormat = "d MMMM yyyy";
             dateCreate.Format = DateTimePickerFormat.Custom;
-            dateCreate.Location = new Point(26, 260);
+            dateCreate.Location = new Point(381, 69);
             dateCreate.Name = "dateCreate";
             dateCreate.Size = new Size(197, 23);
             dateCreate.TabIndex = 15;
@@ -203,7 +203,7 @@
             description.Location = new Point(26, 129);
             description.Multiline = true;
             description.Name = "description";
-            description.Size = new Size(296, 85);
+            description.Size = new Size(552, 85);
             description.TabIndex = 13;
             // 
             // label4
@@ -233,7 +233,7 @@
             // 
             // CancelButton
             // 
-            CancelButton.Location = new Point(639, 594);
+            CancelButton.Location = new Point(639, 631);
             CancelButton.Name = "CancelButton";
             CancelButton.Size = new Size(75, 23);
             CancelButton.TabIndex = 10;
@@ -243,7 +243,7 @@
             // 
             // SaveButton
             // 
-            SaveButton.Location = new Point(532, 594);
+            SaveButton.Location = new Point(551, 631);
             SaveButton.Name = "SaveButton";
             SaveButton.Size = new Size(75, 23);
             SaveButton.TabIndex = 9;
@@ -253,9 +253,9 @@
             // 
             // DeleteButton
             // 
-            DeleteButton.Location = new Point(741, 251);
+            DeleteButton.Location = new Point(731, 183);
             DeleteButton.Name = "DeleteButton";
-            DeleteButton.Size = new Size(98, 42);
+            DeleteButton.Size = new Size(98, 23);
             DeleteButton.TabIndex = 21;
             DeleteButton.Text = "Удалить";
             DeleteButton.UseVisualStyleBackColor = true;
@@ -263,9 +263,9 @@
             // 
             // EditButton
             // 
-            EditButton.Location = new Point(741, 121);
+            EditButton.Location = new Point(731, 96);
             EditButton.Name = "EditButton";
-            EditButton.Size = new Size(98, 42);
+            EditButton.Size = new Size(98, 23);
             EditButton.TabIndex = 20;
             EditButton.Text = "Редактировать";
             EditButton.UseVisualStyleBackColor = true;
@@ -273,9 +273,9 @@
             // 
             // AddButton
             // 
-            AddButton.Location = new Point(741, 51);
+            AddButton.Location = new Point(731, 37);
             AddButton.Name = "AddButton";
-            AddButton.Size = new Size(98, 42);
+            AddButton.Size = new Size(98, 23);
             AddButton.TabIndex = 19;
             AddButton.Text = "Добавить";
             AddButton.UseVisualStyleBackColor = true;
@@ -290,13 +290,13 @@
             dataGridView1.Location = new Point(20, 27);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(694, 323);
+            dataGridView1.Size = new Size(694, 348);
             dataGridView1.TabIndex = 18;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(24, 367);
+            label2.Location = new Point(24, 404);
             label2.Name = "label2";
             label2.Size = new Size(102, 15);
             label2.TabIndex = 24;
@@ -305,7 +305,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(26, 397);
+            label5.Location = new Point(26, 434);
             label5.Name = "label5";
             label5.Size = new Size(94, 15);
             label5.TabIndex = 25;
@@ -314,7 +314,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(126, 397);
+            label6.Location = new Point(126, 434);
             label6.Name = "label6";
             label6.Size = new Size(38, 15);
             label6.TabIndex = 26;
@@ -326,7 +326,7 @@
             dataGridView2.AllowUserToDeleteRows = false;
             dataGridView2.BackgroundColor = SystemColors.Control;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(20, 426);
+            dataGridView2.Location = new Point(20, 463);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.ReadOnly = true;
             dataGridView2.Size = new Size(587, 150);
@@ -337,7 +337,7 @@
             groupBox2.Controls.Add(button2);
             groupBox2.Controls.Add(button1);
             groupBox2.Controls.Add(dataGridView3);
-            groupBox2.Location = new Point(20, 390);
+            groupBox2.Location = new Point(20, 427);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(693, 186);
             groupBox2.TabIndex = 28;
@@ -347,7 +347,7 @@
             // 
             button2.FlatStyle = FlatStyle.System;
             button2.Font = new Font("Tahoma", 13F, FontStyle.Bold);
-            button2.Location = new Point(631, 103);
+            button2.Location = new Point(632, 63);
             button2.Name = "button2";
             button2.Size = new Size(35, 35);
             button2.TabIndex = 30;
@@ -358,7 +358,7 @@
             // 
             button1.FlatStyle = FlatStyle.System;
             button1.Font = new Font("Tahoma", 12F, FontStyle.Bold);
-            button1.Location = new Point(631, 46);
+            button1.Location = new Point(632, 22);
             button1.Name = "button1";
             button1.Size = new Size(35, 35);
             button1.TabIndex = 29;
@@ -381,7 +381,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(869, 658);
+            ClientSize = new Size(850, 678);
             Controls.Add(groupBox2);
             Controls.Add(label5);
             Controls.Add(dataGridView2);

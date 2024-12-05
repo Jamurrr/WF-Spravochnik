@@ -30,6 +30,7 @@
         {
             label3 = new Label();
             groupBox1 = new GroupBox();
+            label4 = new Label();
             zp = new NumericUpDown();
             CancelButton = new Button();
             SaveButton = new Button();
@@ -40,7 +41,6 @@
             EditButton = new Button();
             AddButton = new Button();
             dataGridView1 = new DataGridView();
-            label4 = new Label();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)zp).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -70,20 +70,29 @@
             groupBox1.TabIndex = 10;
             groupBox1.TabStop = false;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(6, 10);
+            label4.Name = "label4";
+            label4.Size = new Size(38, 15);
+            label4.TabIndex = 12;
+            label4.Text = "label4";
+            // 
             // zp
             // 
             zp.DecimalPlaces = 2;
             zp.Increment = new decimal(new int[] { 10000, 0, 0, 0 });
-            zp.Location = new Point(50, 188);
+            zp.Location = new Point(18, 113);
             zp.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
             zp.Name = "zp";
-            zp.Size = new Size(150, 23);
+            zp.Size = new Size(117, 23);
             zp.TabIndex = 11;
             zp.Value = new decimal(new int[] { 20000, 0, 0, 0 });
             // 
             // CancelButton
             // 
-            CancelButton.Location = new Point(139, 270);
+            CancelButton.Location = new Point(161, 200);
             CancelButton.Name = "CancelButton";
             CancelButton.Size = new Size(75, 23);
             CancelButton.TabIndex = 10;
@@ -93,7 +102,7 @@
             // 
             // SaveButton
             // 
-            SaveButton.Location = new Point(39, 270);
+            SaveButton.Location = new Point(80, 200);
             SaveButton.Name = "SaveButton";
             SaveButton.Size = new Size(75, 23);
             SaveButton.TabIndex = 9;
@@ -104,7 +113,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(48, 170);
+            label2.Location = new Point(16, 95);
             label2.Name = "label2";
             label2.Size = new Size(105, 15);
             label2.TabIndex = 8;
@@ -113,7 +122,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(48, 87);
+            label1.Location = new Point(16, 40);
             label1.Name = "label1";
             label1.Size = new Size(59, 15);
             label1.TabIndex = 7;
@@ -121,16 +130,16 @@
             // 
             // name
             // 
-            name.Location = new Point(50, 105);
+            name.Location = new Point(16, 58);
             name.Name = "name";
-            name.Size = new Size(150, 23);
+            name.Size = new Size(220, 23);
             name.TabIndex = 5;
             // 
             // DeleteButton
             // 
-            DeleteButton.Location = new Point(299, 248);
+            DeleteButton.Location = new Point(299, 200);
             DeleteButton.Name = "DeleteButton";
-            DeleteButton.Size = new Size(98, 42);
+            DeleteButton.Size = new Size(98, 23);
             DeleteButton.TabIndex = 9;
             DeleteButton.Text = "Удалить";
             DeleteButton.UseVisualStyleBackColor = true;
@@ -138,9 +147,9 @@
             // 
             // EditButton
             // 
-            EditButton.Location = new Point(299, 118);
+            EditButton.Location = new Point(299, 102);
             EditButton.Name = "EditButton";
-            EditButton.Size = new Size(98, 42);
+            EditButton.Size = new Size(98, 23);
             EditButton.TabIndex = 8;
             EditButton.Text = "Редактировать";
             EditButton.UseVisualStyleBackColor = true;
@@ -150,7 +159,7 @@
             // 
             AddButton.Location = new Point(299, 48);
             AddButton.Name = "AddButton";
-            AddButton.Size = new Size(98, 42);
+            AddButton.Size = new Size(98, 23);
             AddButton.TabIndex = 7;
             AddButton.Text = "Добавить";
             AddButton.UseVisualStyleBackColor = true;
@@ -167,15 +176,6 @@
             dataGridView1.ReadOnly = true;
             dataGridView1.Size = new Size(250, 380);
             dataGridView1.TabIndex = 6;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(6, 10);
-            label4.Name = "label4";
-            label4.Size = new Size(38, 15);
-            label4.TabIndex = 12;
-            label4.Text = "label4";
             // 
             // Jobs
             // 
